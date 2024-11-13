@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
-        "module": "commonjs"
-    },
-    "rootDir": "./src",
-    "outDir": "./dist"
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true
+    }
 }
