@@ -1,5 +1,0 @@
-{
-    "watch": ["dist/index.js"],
-    "ext": "js",
-    "exec": "node dist/index.js"
-}
