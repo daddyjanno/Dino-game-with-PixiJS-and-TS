@@ -2,23 +2,20 @@ import * as PIXI from 'pixi.js'
 import { Assets } from '@pixi/assets'
 import manifest from './manifest.json'
 
-console.log('test')
-console.log(manifest)
-
 const app = new PIXI.Application({
     width: 800,
     height: 600,
-    backgroundColor: 0x109bb,
+    backgroundColor: 0x1099bb,
 })
 document.body.appendChild(app.view)
 
 await Assets.init({ manifest })
 const assets = await Assets.loadBundle(['ghost', 'cloud', 'obstacle'])
 
-const ghostTextures = Object.values(assets.ghost)
+const ghostTextures: PIXI.Texture[] = Object.values(assets.ghost)
 console.log(ghostTextures)
 
-function GetSprite(texturesArray) {
+function GetSprite(texturesArray: PIXI.Texture[]) {
     return new PIXI.AnimatedSprite(texturesArray)
 }
 
