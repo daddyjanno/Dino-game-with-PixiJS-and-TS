@@ -1,14 +1,15 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "ESNext",
         "moduleResolution": "node",
         "outDir": "./lib/",
-        "target": "es5",
+        "target": "ES2017",
         "sourceMap": true,
         "allowJs": true,
         "lib": ["es2017", "dom"],
-        "types": ["jest"],
-        "typeRoots": ["node_modules/@types"]
+        "typeRoots": ["node_modules/@types"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true
     },
     "include": ["src/**/*.ts", "node_modules/@types"],
     "exclude": [".git", "node_modules"]
