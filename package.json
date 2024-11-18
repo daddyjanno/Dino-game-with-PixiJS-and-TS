@@ -11,6 +11,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@pixi/assets": "^6.5.10",
         "gsap": "^3.12.5",
         "pixi.js": "^6.5.10"
     },
