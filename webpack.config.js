@@ -13,6 +13,21 @@ module.exports = {
         compress: true,
         port: 9000,
     },
-
+    resolve: {
+        extensions: ['.ts', '.js'],
+    },
+    module: {
+        rules: [
+            {
+                test: /\.ts$/, // Fichiers TypeScript
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.json$/, // Fichiers JSON
+                type: 'json', // Charge les fichiers JSON
+            },
+        ],
+    },
     mode: 'development',
 }
