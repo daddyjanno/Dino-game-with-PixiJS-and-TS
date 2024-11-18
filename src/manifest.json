@@ -1,0 +1,26 @@
+{
+    "bundles": [
+        {
+            "name": "ghost",
+            "assets": {
+                "ghost1": "./assets/images/ghost/1.png",
+                "ghost2": "./assets/images/ghost/2.png",
+                "ghost3": "./assets/images/ghost/3.png"
+            }
+        },
+        {
+            "name": "cloud",
+            "assets": {
+                "cloud1": "./assets/images/cloud/1.png",
+                "cloud2": "./assets/images/cloud/2.png"
+            }
+        },
+        {
+            "name": "obstacle",
+            "assets": {
+                "obstacle1": "./assets/images/obstacle1/obstacle1.png",
+                "obstacle2": "./assets/images/obstacle2/obstacle2.png"
+            }
+        }
+    ]
+}
