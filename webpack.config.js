@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.ts',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -13,14 +13,6 @@ module.exports = {
         compress: true,
         port: 9000,
     },
-    module: {
-        rules: [
-            {
-                test: /\.ts$/,
-                use: 'awesome-typescript-loader',
-                exclude: /node_modules/,
-            },
-        ],
-    },
+
     mode: 'development',
 }
